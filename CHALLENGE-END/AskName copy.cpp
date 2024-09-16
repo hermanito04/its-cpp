@@ -1,18 +1,17 @@
-// Learning C++
-// ask the name of the user
-// and print a message with the name just inserted
 
 #include <iostream>
-#include <string>
+#include <string> //libreria da mettere se ho delle varibili con più carattere
+using namespace std;
 
 int main () {
-    std::string name;
-    std::cin >> name;
+    string name; //string = insieme di caratteri  
+    cout << "scrivi il tuo nome" << flush; // flush = visulizza tutto senza bufferizzare 
+    cin >> name;
 
-    std::cout << "il tuo nome è ";
-    std::cout << name;
+    cout << "il tuo nome è ";
+    cout << name << endl;
 
-    std::cout << std::endl << std::endl;
+    cout << endl << endl;
 
     return(0);
 }
